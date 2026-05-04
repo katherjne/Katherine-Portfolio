@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Katherine Jiang — Portfolio</title>
+<meta name="description" content="Katherine Jiang — product designer and developer at Northeastern University. Building ethical, high-impact digital tools through UI/UX design and front-end development."/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
@@ -30,7 +31,7 @@
 <div class="hero fade-in">
   <div class="hero-eyebrow">Product Design · Software Development</div>
   <div style="position:relative;margin:1.5rem 0 3rem 0">
-    <img src="collage.png" alt="Katherine's collage" style="width:100%;height:auto;display:block;border-radius:4px"/>
+    <img src="collage.jpg" alt="Katherine's collage" style="width:100%;height:auto;display:block;border-radius:4px"/>
     <div style="position:absolute;bottom:1.5rem;left:1.5rem">
       <h1 class="hero-title" style="color:#fff;text-shadow:0 2px 12px rgba(0,0,0,0.4)">
         <span class="light" style="color:rgba(255,255,255,0.85)">Katherine's</span>
@@ -42,8 +43,8 @@
     <div class="hero-divider"></div>
     <p class="hero-sub">First year at Northeastern University — building ethical, high-impact digital tools.</p>
     <div class="hero-meta">
-      <span>📍 Irvine, CA</span>
-      <span>📍 Boston, MA</span>
+      <span class="location-item">Irvine, CA</span>
+      <span class="location-item">Boston, MA</span>
     </div>
   </div>
 </div>
@@ -85,6 +86,7 @@
           <p class="project-desc">A strategic rebrand of SuperPower Mentors' website to better communicate impact, trust, and value — particularly to families — while remaining inclusive of students, mentors, and partner organizations.</p>
           <p class="proj-role">Role: <strong>Junior Designer &amp; Developer</strong></p>
         </div>
+        <img src="scout-wireframes-hi.png" alt="Superpower Mentors wireframes" class="proj-thumb"/>
       </div>
     </a>
 
@@ -104,6 +106,7 @@
           <p class="project-desc">A unified vinyl record search platform aggregating listings from multiple marketplaces — so collectors and casual listeners can instantly discover availability, condition, and lowest price.</p>
           <p class="proj-role">Role: <strong>Front-end Developer</strong></p>
         </div>
+        <img src="groove-ui.png" alt="Groove Scout UI" class="proj-thumb"/>
       </div>
     </a>
 
@@ -123,6 +126,7 @@
           <p class="project-desc">A desktop animal health dashboard for shelter volunteers to log daily observations, medical appointments, vaccinations, and behavioral notes — replacing paper forms for 30+ volunteers.</p>
           <p class="proj-role">Role: <strong>Software Designer</strong></p>
         </div>
+        <img src="shelter-wireframes-hi.png" alt="Emerald City Pet Shelter wireframes" class="proj-thumb"/>
       </div>
     </a>
 
@@ -141,6 +145,7 @@
         <div class="contact-links">
           <a href="mailto:katherine.jiang07@gmail.com" class="contact-link">Email <span>katherine.jiang07@gmail.com →</span></a>
           <a href="https://www.linkedin.com/in/katherine-jiang-96b09b2a9/" target="_blank" class="contact-link">LinkedIn <span>View Profile →</span></a>
+          <a href="https://github.com/katherjne" target="_blank" class="contact-link">GitHub <span>View Profile →</span></a>
           <a href="resume.pdf" download class="contact-link">Résumé <span>Download PDF →</span></a>
         </div>
       </div>
@@ -150,13 +155,14 @@
 
 <footer>
   <div class="foot-inner">
-    <span>© 2025 Katherine Jiang</span>
+    <span>© 2026 Katherine Jiang</span>
     <span>Product Design · Software Development</span>
   </div>
 </footer>
 
 <script>
 window.addEventListener('load',()=>{
+  if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark');document.getElementById('darkBtn').textContent='Light'}
   setTimeout(()=>{document.getElementById('loader').classList.add('hide')},1200);
 });
 window.addEventListener('scroll',()=>{
@@ -171,7 +177,9 @@ document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 setTimeout(()=>document.querySelector('.hero').classList.add('visible'),1300);
 function toggleDark(){
   document.body.classList.toggle('dark');
-  document.getElementById('darkBtn').textContent=document.body.classList.contains('dark')?'Light':'Dark';
+  var isDark=document.body.classList.contains('dark');
+  document.getElementById('darkBtn').textContent=isDark?'Light':'Dark';
+  localStorage.setItem('dark',isDark?'1':'0');
 }
 </script>
 </body>
