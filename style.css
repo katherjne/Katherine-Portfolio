@@ -34,13 +34,16 @@ body.dark nav{background:rgba(26,25,23,0.95)}
 .fade-in.visible{opacity:1;transform:none}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:5rem;padding-top:6rem;padding-left:2rem;padding-right:2rem;border-bottom:1px solid var(--light-gray)}
+.hero{min-height:auto;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:5rem;padding-top:20rem;padding-left:2rem;padding-right:2rem;border-bottom:1px solid var(--light-gray)}
 .hero-eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);margin-bottom:1.2rem;width:100%}
 .hero-title{font-family:'Playfair Display',serif;font-weight:900;line-height:.92;letter-spacing:-.01em;margin-bottom:.5rem;font-size:clamp(4rem,11.5vw,11.5vw);width:100%;text-align:left}
 .hero-title .light{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;display:block;color:var(--gray);letter-spacing:.02em;font-size:.58em}
+.hero-title-inline{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(3rem,10vw,9rem);white-space:nowrap}
 .hero-bottom{width:100%}
 .hero-divider{width:48px;height:1px;background:var(--fg);margin:2rem 0;transition:background .4s}
-.hero-sub{font-size:1.1rem;color:var(--gray);max-width:280px;line-height:1.8;font-weight:300}
+.hero-sub-row{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;width:100%}
+.hero-sub{font-size:.95rem;color:var(--gray);max-width:none;white-space:nowrap;line-height:1.8;font-weight:300}
+.hero-edu{font-size:.95rem;color:var(--gray);white-space:nowrap;line-height:1.8;font-weight:300;text-align:right}
 .hero-meta{display:flex;gap:2rem;margin-top:2rem;font-size:1rem;color:var(--gray);letter-spacing:.05em}
 .location-item{display:inline-flex;align-items:center;gap:.35rem}
 .location-item::before{content:'';display:inline-block;width:8px;height:11px;background-color:currentColor;clip-path:path('M4 0C1.79 0 0 1.79 0 4C0 7 4 11 4 11C4 11 8 7 8 4C8 1.79 6.21 0 4 0ZM4 5.5C3.17 5.5 2.5 4.83 2.5 4C2.5 3.17 3.17 2.5 4 2.5C4.83 2.5 5.5 3.17 5.5 4C5.5 4.83 4.83 5.5 4 5.5Z');flex-shrink:0}

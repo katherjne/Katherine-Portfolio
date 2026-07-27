@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Work — Katherine Jiang</title>
-<meta name="description" content="Selected work by Katherine Jiang — UX design and front-end development projects including SuperPower Mentors, Groove Scout, and Emerald City Pet Shelter."/>
+<title>Groove Scout — Katherine Jiang</title>
+<meta name="description" content="Groove Scout — a unified vinyl record search platform case study by Katherine Jiang."/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
@@ -29,10 +29,10 @@
 
 <section class="page-header fade-in">
   <div class="wrap">
-    <div class="page-eyebrow">Selected Work</div>
+    <div class="page-eyebrow">Case Study — 02 / Oasis</div>
     <h1 class="page-title">
-      <span class="light">03 Projects</span>
-      WORK
+      <span class="light">Groove</span>
+      SCOUT
     </h1>
   </div>
 </section>
@@ -40,26 +40,7 @@
 <section class="work-section">
   <div class="wrap">
 
-    <a href="project-1.html" class="project fade-in">
-      <div class="proj-top">
-        <div class="proj-num">01</div>
-        <div>
-          <div class="proj-org">Scout</div>
-          <h3 class="project-title">Superpower<br>Mentors</h3>
-          <div class="project-tags">
-            <span class="tag">UI/UX</span><span class="tag">Branding</span><span class="tag">Figma</span>
-          </div>
-          <span class="project-status complete">Complete</span>
-          <div><span class="proj-cta">View Case Study →</span></div>
-        </div>
-        <div>
-          <p class="project-desc">A strategic rebrand of SuperPower Mentors' website to better communicate impact, trust, and value — particularly to families — while remaining inclusive of students, mentors, and partner organizations.</p>
-          <p class="proj-role">Role: <strong>Junior Designer &amp; Developer</strong></p>
-        </div>
-      </div>
-    </a>
-
-    <a href="project-2.html" class="project fade-in">
+    <div class="project fade-in" style="cursor:default">
       <div class="proj-top">
         <div class="proj-num">02</div>
         <div>
@@ -69,33 +50,39 @@
             <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Frontend</span>
           </div>
           <span class="project-status complete">Complete</span>
-          <div><span class="proj-cta">View Case Study →</span></div>
         </div>
         <div>
           <p class="project-desc">A unified vinyl record search platform aggregating listings from multiple marketplaces — so collectors and casual listeners can instantly discover availability, condition, and lowest price.</p>
           <p class="proj-role">Role: <strong>Front-end Developer</strong></p>
         </div>
       </div>
-    </a>
+    </div>
 
-    <a href="project-3.html" class="project fade-in">
-      <div class="proj-top">
-        <div class="proj-num">03</div>
-        <div>
-          <div class="proj-org">Personal</div>
-          <h3 class="project-title">Emerald City<br>Pet Shelter</h3>
-          <div class="project-tags">
-            <span class="tag">UX Design</span><span class="tag">Dashboard</span><span class="tag">Figma</span>
+    <div class="detail-panel open">
+      <div class="detail-inner">
+        <div class="detail-cols">
+          <div>
+            <h3>Project Details</h3>
+            <p>Built with CSS, JavaScript, Node, and React. Solves the frustration of hunting across dozens of marketplaces to find a specific vinyl record.</p>
+            <div style="margin-top:1rem">
+              <div class="detail-step"><span class="step-num">01</span><span class="step-text">Aggregates listings from multiple sites into one destination</span></div>
+              <div class="detail-step"><span class="step-num">02</span><span class="step-text">Shows condition info and lowest price per record</span></div>
+              <div class="detail-step"><span class="step-num">03</span><span class="step-text">Search by vinyl record, artist, or album</span></div>
+              <div class="detail-step"><span class="step-num">04</span><span class="step-text">Account system with favorites and listing views</span></div>
+            </div>
           </div>
-          <span class="project-status complete">Complete</span>
-          <div><span class="proj-cta">View Case Study →</span></div>
+          <div>
+            <h3>Technical Stack</h3>
+            <p>React frontend, Node.js backend, CSS for a clean minimal dark-themed UI centered around a single search experience.</p>
+          </div>
         </div>
-        <div>
-          <p class="project-desc">A desktop animal health dashboard for shelter volunteers to log daily observations, medical appointments, vaccinations, and behavioral notes — replacing paper forms for 30+ volunteers.</p>
-          <p class="proj-role">Role: <strong>Software Designer</strong></p>
+        <div class="img-grid two">
+          <div class="img-item"><p>App UI</p><img src="groove-ui.png" alt="Groove UI"/></div>
+          <div class="img-item"><p>Codebase</p><img src="groove-code.png" alt="Groove code"/></div>
         </div>
+        <a href="projects.html" class="close-btn" style="display:block;text-decoration:none">← Back to Work</a>
       </div>
-    </a>
+    </div>
 
   </div>
 </section>
@@ -106,6 +93,12 @@
     <span>Product Design · Software Development</span>
   </div>
 </footer>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt=""/>
+  <div id="lightbox-caption"></div>
+  <div id="lightbox-close" onclick="event.stopPropagation();closeLightbox()">Close ✕</div>
+</div>
 
 <script>
 window.addEventListener('load',()=>{
@@ -128,6 +121,18 @@ function toggleDark(){
   document.getElementById('darkBtn').textContent=isDark?'Light':'Dark';
   localStorage.setItem('dark',isDark?'1':'0');
 }
+document.querySelectorAll('.img-item img').forEach(function(img){
+  img.addEventListener('click',function(e){
+    e.stopPropagation();
+    var lb=document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src=this.src;
+    document.getElementById('lightbox-img').alt=this.alt;
+    document.getElementById('lightbox-caption').textContent=this.closest('.img-item').querySelector('p')?this.closest('.img-item').querySelector('p').textContent:'';
+    lb.classList.add('open');
+  });
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()});
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
 </script>
 </body>
 </html>
