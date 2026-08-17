@@ -18,7 +18,7 @@ a{color:inherit;text-decoration:none}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,237,228,0.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--light-gray);transition:background .4s}
 body.dark nav{background:rgba(26,25,23,0.95)}
 .nav-inner{margin:0 auto;padding:1.1rem 2rem;display:flex;justify-content:space-between;align-items:center}
-.nav-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:400}
+.nav-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.15rem;letter-spacing:.01em}
 .nav-right{display:flex;align-items:center;gap:2rem}
 .nav-links{display:flex;gap:2rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
 .nav-links a{color:var(--gray);transition:color .2s}
@@ -51,7 +51,7 @@ body.dark nav{background:rgba(26,25,23,0.95)}
 /* PAGE HEADER (about / projects pages) */
 .page-header{padding:8rem 0 4rem;border-bottom:1px solid var(--light-gray)}
 .page-eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);margin-bottom:1.2rem}
-.page-title{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(3rem,8vw,6rem);line-height:.95;letter-spacing:-.01em}
+.page-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;text-transform:uppercase;font-size:clamp(3.4rem,8.5vw,6.5rem);line-height:.95;letter-spacing:.01em}
 .page-title .light{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;display:block;color:var(--gray);letter-spacing:.02em;font-size:.6em}
 
 /* HOME ABOUT TEASER */
@@ -68,7 +68,7 @@ a.project{display:block}
 .about-grid{display:grid;grid-template-columns:220px 1fr;gap:4rem;align-items:start}
 .about-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
 .section-eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);margin-bottom:1.5rem}
-.about-name{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;line-height:1;margin-bottom:1.5rem}
+.about-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:3rem;font-weight:300;letter-spacing:.01em;line-height:1;margin-bottom:1.5rem}
 .about-text{font-size:.9rem;line-height:1.9;color:var(--gray);font-weight:300;margin-bottom:1rem}
 .skills-block{margin-top:2rem;border-top:1px solid var(--light-gray);padding-top:1.5rem}
 .skills-row{display:flex;gap:.5rem;align-items:baseline;margin-bottom:.7rem;font-size:.82rem}
@@ -81,13 +81,13 @@ a.project{display:block}
 .timeline-entry{display:grid;grid-template-columns:100px 1fr;gap:2.5rem;padding:1.5rem 0;border-bottom:1px solid var(--light-gray);align-items:start}
 .timeline-entry:first-child{border-top:1px solid var(--light-gray)}
 .timeline-year{font-size:.72rem;letter-spacing:.1em;color:var(--gray);padding-top:.2rem;font-weight:300}
-.timeline-school{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;margin-bottom:.4rem}
+.timeline-school{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;font-weight:300;letter-spacing:.01em;margin-bottom:.4rem}
 .timeline-detail{font-size:.82rem;color:var(--gray);font-weight:300;line-height:1.7}
 
 /* WORK */
 .work-section{padding:5rem 0;border-bottom:1px solid var(--light-gray)}
 .work-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3.5rem}
-.work-title{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900}
+.work-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:3.2rem;font-weight:300;text-transform:uppercase;letter-spacing:.01em}
 .work-count{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray)}
 
 .project{border-top:1px solid var(--light-gray);padding:2.5rem 0;cursor:pointer;transition:padding-left .25s,padding-right .25s,background .25s}
@@ -97,7 +97,7 @@ body.dark .project:hover{background:rgba(255,255,255,0.03)}
 .proj-thumb{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;opacity:.75;transition:opacity .25s}
 .project:hover .proj-thumb{opacity:1}
 .proj-num{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;color:var(--gray);padding-top:.2rem}
-.project-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;line-height:1.05;margin-bottom:.8rem}
+.project-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2.4rem;font-weight:300;letter-spacing:.01em;line-height:1.05;margin-bottom:.8rem}
 .proj-org{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin-bottom:.8rem}
 .project-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.8rem}
 .tag{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .55rem;border:1px solid var(--light-gray);color:var(--gray)}
@@ -116,7 +116,7 @@ body.dark .detail-panel{background:#111}
 @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
 .detail-inner{padding:2.5rem}
 .detail-cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2rem}
-.detail-panel h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:1rem}
+.detail-panel h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.55rem;font-weight:300;letter-spacing:.01em;margin-bottom:1rem}
 .detail-panel p{font-size:.83rem;line-height:1.85;color:#bbb8b0;font-weight:300}
 .detail-step{display:flex;gap:.75rem;margin-bottom:.6rem}
 .step-num{font-size:.7rem;color:#666;min-width:1.4rem;padding-top:.1rem}
@@ -142,7 +142,7 @@ body.dark .detail-panel{background:#111}
 /* CONTACT */
 #contact{padding:5rem 0}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.contact-big{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:900;line-height:1;margin-bottom:1.5rem}
+.contact-big{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(2.5rem,5.5vw,4.5rem);font-weight:300;letter-spacing:.01em;line-height:1;margin-bottom:1.5rem}
 .contact-big em{font-style:italic;font-weight:400;color:var(--gray)}
 .contact-sub{font-size:.83rem;color:var(--gray);line-height:1.85;font-weight:300;max-width:300px}
 .contact-links{border-top:1px solid var(--light-gray)}
