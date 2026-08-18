@@ -4,11 +4,11 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Superpower Mentors — Katherine Jiang</title>
-<meta name="description" content="Superpower Mentors — a strategic rebrand case study by Katherine Jiang."/>
+<meta name="description" content="Superpower Mentors — a brand identity and website redesign project by Katherine Jiang, with Scout at Northeastern University."/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body style="--accent:#571477">
 
 <div id="loader"><div class="loader-initials">KJ</div></div>
 <div id="progress"></div>
@@ -27,67 +27,275 @@
   </div>
 </nav>
 
-<section class="page-header fade-in">
-  <div class="wrap">
-    <div class="page-eyebrow">Case Study — 01 / Scout</div>
-    <h1 class="page-title">
-      <span class="light">Superpower</span>
-      MENTORS
-    </h1>
+<div class="cs-navspace"></div>
+
+<div class="cs-contents">
+  <div class="cs-contents-inner">
+    <a href="#overview"><span class="n">01</span>Overview</a>
+    <a href="#client"><span class="n">02</span>The Client</a>
+    <a href="#goals"><span class="n">03</span>Goals</a>
+    <a href="#process"><span class="n">04</span>Process</a>
+    <a href="#iteration"><span class="n">05</span>Iteration</a>
+    <a href="#website"><span class="n">06</span>Website</a>
+    <a href="#showcase"><span class="n">07</span>Showcase</a>
+    <a href="projects.html" class="cs-back">← All Work</a>
+  </div>
+</div>
+
+<section class="cs-hero">
+  <div class="cs-wrap fade-in">
+    <div class="cs-eyebrow">Scout · Superpower Mentors</div>
+    <h1 class="cs-statement">Superpower Mentors.</h1>
+    <div class="cs-meta">
+      <div>
+        <div class="cs-meta-label">Role</div>
+        <div class="cs-meta-val">Junior Developer &amp; Designer</div>
+      </div>
+      <div>
+        <div class="cs-meta-label">Team</div>
+        <div class="cs-meta-val">10 members, cross-functional</div>
+      </div>
+      <div>
+        <div class="cs-meta-label">Timeline</div>
+        <div class="cs-meta-val">January – April 2026</div>
+      </div>
+      <div>
+        <div class="cs-meta-label">Tools</div>
+        <div class="cs-meta-val">Figma, HTML/CSS, JavaScript</div>
+      </div>
+      <div>
+        <div class="cs-meta-label">Type</div>
+        <div class="cs-meta-val">Brand Identity · UX Design · Web</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="work-section">
-  <div class="wrap">
+<div class="cs-bleed fade-in">
+  <div class="cs-figure">
+    <img src="scout-hero.jpg" alt="Superpower Mentors brand banner — the redesigned home page shown on a laptop, with the headline Relate. Empower. Transform. and outcome statistics"/>
+  </div>
+</div>
 
-    <div class="project fade-in" style="cursor:default">
-      <div class="proj-top">
-        <div class="proj-num">01</div>
-        <div>
-          <div class="proj-org">Scout</div>
-          <h3 class="project-title">Superpower<br>Mentors</h3>
-          <div class="project-tags">
-            <span class="tag">UI/UX</span><span class="tag">Branding</span><span class="tag">Figma</span>
-          </div>
-          <span class="project-status complete">Complete</span>
+<section class="cs-section" id="overview">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">01</span>
+        <h2 class="cs-heading">Overview</h2>
+      </div>
+      <div>
+        <p class="cs-lede">Superpower Mentors runs a mentorship program with measurable results. Their website did not communicate that — and it had to speak to three audiences at once.</p>
+        <p class="cs-body">Scout paired a ten-person cross-functional team with the client over a single semester. Our brief was a strategic rebrand: sharpen the visual language, restructure the site, and make the case for the program in a way that reaches <em>parents</em> first without alienating <em>prospective mentors</em> or <em>partner schools</em>.</p>
+        <p class="cs-body">I joined as a junior designer and developer, working across user research, wireframing at every fidelity, and the handoff-ready component system the developers built from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" id="client">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">02</span>
+        <h2 class="cs-heading">The Client</h2>
+      </div>
+      <div>
+        <p class="cs-lede">Trusted online mentorship for youth with ADHD, dyslexia, autism, and other learning differences.</p>
+        <p class="cs-body">Superpower Mentors matches each mentee with a mentor who is, in the client's words, "the older version of them." The program works — but the proof lived in conversations and testimonials rather than anywhere a visitor would find it.</p>
+
+        <div class="cs-stat">
+          <div class="cs-stat-num">30% → 0%</div>
+          <div class="cs-stat-text">Reported reduction in program dropout rates. This number became the anchor of the redesign: everything on the new site had to build toward it.</div>
         </div>
-        <div>
-          <p class="project-desc">A strategic rebrand of SuperPower Mentors' website to better communicate impact, trust, and value — particularly to families — while remaining inclusive of students, mentors, and partner organizations.</p>
-          <p class="proj-role">Role: <strong>Junior Designer &amp; Developer</strong></p>
+
+        <p class="cs-body">Research made clear that the three audiences arrive with different questions. We treated them as separate paths through the same site rather than one generic message.</p>
+
+        <div class="cs-boxes">
+          <div class="cs-box">
+            <div class="cs-box-label">Audience 01</div>
+            <div class="cs-box-title">Parents</div>
+            <p>Arrive asking whether this is safe, credible, and worth their child's time. They need outcomes and reassurance before anything else.</p>
+          </div>
+          <div class="cs-box">
+            <div class="cs-box-label">Audience 02</div>
+            <div class="cs-box-title">Prospective Mentors</div>
+            <p>Want to understand the commitment, the matching process, and the kind of impact they can expect to have.</p>
+          </div>
+          <div class="cs-box">
+            <div class="cs-box-label">Audience 03</div>
+            <div class="cs-box-title">Partner Schools</div>
+            <p>Evaluate the program as an institutional partner — looking for structure, safeguarding, and evidence.</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="detail-panel open">
-      <div class="detail-inner">
-        <div class="detail-cols">
-          <div>
-            <h3>Project Details</h3>
-            <p>Strategic retouch of SuperPower Mentors' brand identity and website, focusing on visual language, storytelling, and UX refinements.</p>
-            <div style="margin-top:1rem">
-              <div class="detail-step"><span class="step-num">01</span><span class="step-text">Mood boarding — 4 visual directions balancing warmth and growth</span></div>
-              <div class="detail-step"><span class="step-num">02</span><span class="step-text">Color palette — Purple, Yellow, and Black as primary brand colors</span></div>
-              <div class="detail-step"><span class="step-num">03</span><span class="step-text">Sitemap — consultation, mentoring, safety, and blog pages</span></div>
-              <div class="detail-step"><span class="step-num">04</span><span class="step-text">Low → Mid → High fidelity wireframes for 6 core pages</span></div>
-            </div>
+<section class="cs-section" id="goals">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">03</span>
+        <h2 class="cs-heading">Goals</h2>
+      </div>
+      <div>
+        <p class="cs-body">We set our goals at kickoff and measured every design decision against them.</p>
+
+        <div class="cs-boxes two">
+          <div class="cs-box">
+            <div class="cs-box-label">Goal 01</div>
+            <div class="cs-box-title">The Brand</div>
+            <p>Connect through storytelling to build trust and engagement. Inclusive, but specialized — speaking to a broad audience without losing the specificity that makes the program credible.</p>
           </div>
-          <div>
-            <h3>Design System</h3>
-            <p>Color palette draws on deep purple (#571477), vibrant orange, and warm yellows. Pages: Home, Mentoring, Blog, About Us, Community, Safety.</p>
-            <a href="https://superpower-mentors-k7pv.vercel.app/" target="_blank" class="proto-link">View Live Site →</a>
+          <div class="cs-box">
+            <div class="cs-box-label">Goal 02</div>
+            <div class="cs-box-title">The Website</div>
+            <p>Build a clear path for parents, prospective mentors, and partner schools. Move the site from safe and generic to expressive and hopeful.</p>
           </div>
         </div>
-        <div class="img-grid two">
-          <div class="img-item"><p>Moodboard</p><img src="scout-moodboard.png" alt="Moodboard"/></div>
-          <div class="img-item"><p>Branding</p><img src="scout-branding.png" alt="Colors"/></div>
-          <div class="img-item"><p>Low-Fidelity Wireframes</p><img src="scout-wireframes-lo.png" alt="Low-fi"/></div>
-          <div class="img-item"><p>Mid-Fidelity Wireframes</p><img src="scout-wireframes-mid.png" alt="Mid-fi"/></div>
-          <div class="img-item img-full"><p>High-Fidelity Wireframes</p><img src="scout-wireframes-hi.png" alt="Hi-fi"/></div>
-        </div>
-        <a href="projects.html" class="close-btn" style="display:block;text-decoration:none">← Back to Work</a>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="cs-section" id="process">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">04</span>
+        <h2 class="cs-heading">Process</h2>
+      </div>
+      <div>
+        <p class="cs-body">The semester broke into three phases, each ending in a client review.</p>
+
+        <div class="cs-boxes">
+          <div class="cs-box">
+            <div class="cs-box-label">Phase 01</div>
+            <div class="cs-box-title">Discovery</div>
+            <p>User research translated into personas and user flows, then a sitemap covering consultation, mentoring, safety, and blog.</p>
+          </div>
+          <div class="cs-box">
+            <div class="cs-box-label">Phase 02</div>
+            <div class="cs-box-title">Lo-fi Wireframes</div>
+            <p>Structure before styling — testing the funnel and the six-page architecture while changes were still cheap.</p>
+          </div>
+          <div class="cs-box">
+            <div class="cs-box-label">Phase 03</div>
+            <div class="cs-box-title">Design System</div>
+            <p>Color, type, and components codified into a reusable library, then applied across every page at high fidelity.</p>
+          </div>
+        </div>
+
+        <div class="cs-figure cs-inset">
+          <img src="scout-wireframes-lo.jpg" alt="Low-fidelity wireframes for the Superpower Mentors site, showing page structure across six pages"/>
+          <div class="cs-cap"><span class="n">Fig. 01</span><span>Low-fidelity wireframes — structure across six pages</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" id="iteration">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">05</span>
+        <h2 class="cs-heading">Iteration</h2>
+      </div>
+      <div>
+        <p class="cs-body">The brand direction took three rounds. We started wide with mood boards, narrowed to a palette built on deep purple, vibrant orange, and warm yellow, then pushed the wireframes to mid fidelity to see the identity in context.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cs-wrap fade-in">
+    <div class="cs-figrow three">
+      <div class="cs-figure cs-inset">
+        <img src="scout-moodboard.png" alt="Mood board exploring four visual directions balancing warmth and growth"/>
+        <div class="cs-cap"><span class="n">Round 1</span><span>Mood boards</span></div>
+      </div>
+      <div class="cs-figure cs-inset">
+        <img src="scout-branding.jpg" alt="Brand guide showing the purple, orange and yellow color palette and type system"/>
+        <div class="cs-cap"><span class="n">Round 2</span><span>Branding guide</span></div>
+      </div>
+      <div class="cs-figure cs-inset">
+        <img src="scout-wireframes-mid.jpg" alt="Mid-fidelity wireframes applying the new brand palette to page layouts"/>
+        <div class="cs-cap"><span class="n">Round 3</span><span>Mid-fidelity</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" id="website">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">06</span>
+        <h2 class="cs-heading">Website</h2>
+      </div>
+      <div>
+        <p class="cs-lede">Six pages, one funnel: Home, Mentoring, About Us, Community, Quality, and Blog.</p>
+        <p class="cs-body">The home page leads with <em>Relate. Empower. Transform.</em> and puts the outcome statistics directly beside it — the proof a parent is looking for, in the first screen. Deep purple <em>#571477</em> carries the brand, with orange and yellow as accents for emphasis and calls to action.</p>
+        <p class="cs-body">Below the fold, <em>How It Works</em> walks a visitor through matching, meeting a mentor, and the session itself — the sequence that answers the commitment question for both parents and prospective mentors. The high-fidelity prototypes were delivered handoff-ready, with a component library and documentation for the developer team.</p>
+        <a href="https://superpower-mentors-k7pv.vercel.app/" target="_blank" rel="noopener" class="cs-link">View Live Site →</a>
+      </div>
+    </div>
+  </div>
+  <div class="cs-wrap fade-in">
+    <div class="cs-figure cs-inset">
+      <img src="scout-wireframes-hi.jpg" alt="Final high-fidelity designs for the redesigned Superpower Mentors website"/>
+      <div class="cs-cap"><span class="n">Fig. 02</span><span>These are the final hi-fis</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section" id="showcase">
+  <div class="cs-wrap fade-in">
+    <div class="cs-grid">
+      <div class="cs-rail">
+        <span class="cs-num">07</span>
+        <h2 class="cs-heading">Showcase</h2>
+      </div>
+      <div>
+        <p class="cs-body">At the end of the semester the studio teams presented to the client and to Scout. We handed off the brand guide, the component system, and prototypes for all six pages.</p>
+
+        <div class="cs-meta" style="margin-top:2.5rem">
+          <div>
+            <div class="cs-meta-label">My Role</div>
+            <div class="cs-meta-val">User research, personas and user flows, wireframing across all fidelities, component system</div>
+          </div>
+          <div>
+            <div class="cs-meta-label">Client Work</div>
+            <div class="cs-meta-val">Six-page site redesign and full brand identity refresh</div>
+          </div>
+          <div>
+            <div class="cs-meta-label">Outcome</div>
+            <div class="cs-meta-val">Handoff-ready prototypes, component library, and developer documentation</div>
+          </div>
+          <div>
+            <div class="cs-meta-label">Team</div>
+            <div class="cs-meta-val">10 members across design and development, Scout at Northeastern</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-wrap fade-in">
+    <div class="cs-figure cs-inset narrow">
+      <img src="scout-presentation.jpg" alt="The Scout studio team presenting the Superpower Mentors redesign on stage, with the Our Goals slide behind them"/>
+      <div class="cs-cap"><span class="n">Fig. 03</span><span>Studio teams presenting — Scout showcase</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-next">
+  <div class="cs-wrap fade-in">
+    <a href="project-2.html">
+      <span class="cs-next-label">Next Project — 02</span>
+      <span class="cs-next-title">Groove Scout</span>
+      <span class="cs-next-label">View Project →</span>
+    </a>
   </div>
 </section>
 
@@ -105,7 +313,14 @@
 </div>
 
 <script>
+function setNavHeight(){
+  var n=document.querySelector('nav');
+  if(n)document.documentElement.style.setProperty('--navh',n.offsetHeight+'px');
+}
+setNavHeight();
+window.addEventListener('resize',setNavHeight);
 window.addEventListener('load',()=>{
+  setNavHeight();
   if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark');document.getElementById('darkBtn').textContent='Light'}
   setTimeout(()=>{document.getElementById('loader').classList.add('hide')},1200);
 });
@@ -118,21 +333,32 @@ var obs=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
 },{threshold:.12});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
-setTimeout(()=>document.querySelector('.page-header').classList.add('visible'),1300);
+
+/* contents bar scroll-spy */
+var csLinks=document.querySelectorAll('.cs-contents a[href^="#"]');
+var csSections=[].map.call(csLinks,function(a){return document.querySelector(a.getAttribute('href'))});
+var spy=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting)return;
+    csLinks.forEach(function(a,i){a.classList.toggle('active',csSections[i]===e.target)});
+  });
+},{rootMargin:'-30% 0px -60% 0px'});
+csSections.forEach(function(s){if(s)spy.observe(s)});
+
 function toggleDark(){
   document.body.classList.toggle('dark');
   var isDark=document.body.classList.contains('dark');
   document.getElementById('darkBtn').textContent=isDark?'Light':'Dark';
   localStorage.setItem('dark',isDark?'1':'0');
 }
-document.querySelectorAll('.img-item img').forEach(function(img){
+document.querySelectorAll('.cs-figure img').forEach(function(img){
   img.addEventListener('click',function(e){
     e.stopPropagation();
-    var lb=document.getElementById('lightbox');
+    var cap=this.closest('.cs-figure').querySelector('.cs-cap');
     document.getElementById('lightbox-img').src=this.src;
     document.getElementById('lightbox-img').alt=this.alt;
-    document.getElementById('lightbox-caption').textContent=this.closest('.img-item').querySelector('p')?this.closest('.img-item').querySelector('p').textContent:'';
-    lb.classList.add('open');
+    document.getElementById('lightbox-caption').textContent=cap?cap.textContent.trim():'';
+    document.getElementById('lightbox').classList.add('open');
   });
 });
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()});
