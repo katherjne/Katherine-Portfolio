@@ -1,8 +1,11 @@
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--cream:#F2EDE4;--black:#1a1a1a;--gray:#7a7570;--light-gray:#ddd8ce;--max:900px;--bg:var(--cream);--fg:var(--black);--accent:#571477;--navh:66px;--cs-max:1560px;--cs-pad:3.5rem}
+:root{--cream:#F2EDE4;--black:#1a1a1a;--gray:#7a7570;--light-gray:#ddd8ce;--max:900px;--bg:var(--cream);--fg:var(--black);--navh:66px;--cs-max:1560px;--cs-pad:3.5rem;--accent-light:#571477;--accent-dark:#c39ade}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;transition:background .4s,color .4s}
-body.dark{--bg:#1a1917;--fg:#F2EDE4;--light-gray:#333;--gray:#9a9590;--accent:#c39ade}
+/* --accent resolves per mode. Pages override --accent-light/--accent-dark inline
+   on <body>; never set --accent directly there or it defeats the dark switch. */
+body{--accent:var(--accent-light)}
+body.dark{--bg:#1a1917;--fg:#F2EDE4;--light-gray:#333;--gray:#9a9590;--accent:var(--accent-dark)}
 a{color:inherit;text-decoration:none}
 
 /* LOADER */
@@ -191,9 +194,9 @@ footer{border-top:1px solid var(--light-gray);padding:1.5rem 0}
 
 /* ============================================================
    CASE STUDY — long-form project pages
-   Tokens (--accent, --navh, --cs-max, --cs-pad) live in :root at the
-   top of this file. Per-page accent overrides go inline on <body>,
-   e.g. style="--accent:#571477"
+   Tokens (--navh, --cs-max, --cs-pad, --accent-*) live in :root at the
+   top of this file. Per-page accents go inline on <body> as a PAIR,
+   e.g. style="--accent-light:#3864AE;--accent-dark:#5CD3F5"
    ============================================================ */
 .cs-navspace{height:var(--navh)}
 .cs-wrap{max-width:var(--cs-max);margin:0 auto;padding:0 var(--cs-pad)}
